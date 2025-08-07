@@ -20,6 +20,7 @@ All commands should be run from the project root:
 **Framework**: Astro 5.x with TypeScript support (strict mode)
 
 **Key Directories**:
+
 - `src/pages/` - File-based routing, main entry point is index.astro
 - `src/layouts/` - Layout components (currently Layout.astro for base HTML structure)
 - `src/components/` - Reusable Astro components (currently Welcome.astro)
@@ -27,6 +28,7 @@ All commands should be run from the project root:
 - `public/` - Static files served directly (favicon, etc.)
 
 **Component Structure**:
+
 - Pages use layouts via import and wrapping (`<Layout><Welcome /></Layout>`)
 - Components can import assets and use them with `.src` property
 - Styling is component-scoped using `<style>` blocks in .astro files
