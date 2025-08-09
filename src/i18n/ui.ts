@@ -19,6 +19,7 @@ export const ui = {
     'contact.message': 'Message',
     'contact.submit': 'Send Message',
     'footer.rights': 'All rights reserved',
+    'lang.select': 'Select Language',
   },
   es: {
     'nav.home': 'Inicio',
@@ -33,5 +34,6 @@ export const ui = {
     'contact.message': 'Mensaje',
     'contact.submit': 'Enviar Mensaje',
     'footer.rights': 'Todos los derechos reservados',
+    'lang.select': 'Seleccionar idioma',
   },
 } as const;

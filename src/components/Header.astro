@@ -1,7 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import LanguageSwitcher from './LanguageSwitcher.astro';
-import astroLogo from '../assets/favicon.png';
+import Logo from '@/assets/logoContrerasMini.svg';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -12,7 +12,7 @@ const t = useTranslations(lang);
     <div class="flex justify-between items-center h-16">
       <div class="flex items-center">
         <a href="/" class="text-xl font-bold text-gray-900">
-          <img src={astroLogo.src} width="48" height="48" alt="Astro Homepage" />
+          <Logo class="size-14" />
         </a>
       </div>
 
@@ -38,24 +38,7 @@ const t = useTranslations(lang);
           </a>
         </div>
       </div>
-
-      <div class="flex items-center space-x-4">
-        <LanguageSwitcher />
-
-        <!-- Mobile menu button -->
-        <button
-          class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+      <LanguageSwitcher />
     </div>
   </nav>
 </header>
