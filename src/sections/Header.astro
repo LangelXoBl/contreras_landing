@@ -1,7 +1,7 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import LanguageSwitcher from './LanguageSwitcher.astro';
+import LanguageSwitcher from '@/components/LanguageSwitcher.astro';
 import Logo from '@/assets/logoContrerasMini.svg';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
