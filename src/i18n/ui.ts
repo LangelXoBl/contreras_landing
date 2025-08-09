@@ -48,6 +48,9 @@ export const ui = {
     'mvv.values.excellence': 'Excellence',
     'mvv.values.commitment': 'Commitment',
     'mvv.values.respect': 'Respect',
+    // Whatsapp
+    'whatsapp.message': "Hello! I'm interested in a legal consultation.",
+    'whatsapp.button': 'Contact via WhatsApp',
   },
   es: {
     // Nav
@@ -91,5 +94,8 @@ export const ui = {
     'mvv.values.excellence': 'Excelencia',
     'mvv.values.commitment': 'Compromiso',
     'mvv.values.respect': 'Respeto',
+    // Whatsapp
+    'whatsapp.message': '¡Hola! Me interesa una consulta legal.',
+    'whatsapp.button': 'Contactar por WhatsApp',
   },
 } as const;

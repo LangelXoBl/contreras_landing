@@ -8,6 +8,7 @@ import Hero from '@/sections/Hero.astro';
 import Layout from '@/layouts/Layout.astro';
 import Philosophy from '@/sections/Philosophy.astro';
 import Services from '@/sections/Services.astro';
+import WhatsappFlottingButton from '@/components/WhatsappFlottingButton.astro';
 import { ui } from '@/i18n/ui';
 
 const lang = getLangFromUrl(Astro.url);
@@ -28,4 +29,5 @@ export function getStaticPaths() {
     <Contact />
   </main>
   <Footer />
+  <WhatsappFlottingButton />
 </Layout>
