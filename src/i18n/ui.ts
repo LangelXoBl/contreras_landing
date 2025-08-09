@@ -28,7 +28,11 @@ export const ui = {
     'contact.message': 'Message',
     'contact.submit': 'Send Message',
     // Footer
-    'footer.rights': 'All rights reserved',
+    'footer.description':
+      'Defending your rights with professionalism, integrity and experience since 2003.',
+    'footer.services': 'Services',
+    'footer.company': 'Company',
+    'footer.rights': 'All rights reserved.',
     // Language Switcher
     'lang.select': 'Select Language',
     // Mission, Vision, Values
@@ -67,7 +71,11 @@ export const ui = {
     'contact.message': 'Mensaje',
     'contact.submit': 'Enviar Mensaje',
     // Footer
-    'footer.rights': 'Todos los derechos reservados',
+    'footer.description':
+      'Defendiendo sus derechos con profesionalismo, integridad y experiencia desde 2003.',
+    'footer.services': 'Servicios',
+    'footer.company': 'Empresa',
+    'footer.rights': 'Todos los derechos reservados.',
     // Language Switcher
     'lang.select': 'Seleccionar idioma',
     // Mission, Vision, Values
