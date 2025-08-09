@@ -29,6 +29,19 @@ export const ui = {
     'footer.rights': 'All rights reserved',
     // Language Switcher
     'lang.select': 'Select Language',
+    // Mission, Vision, Values
+    'mvv.title': 'Our Philosophy',
+    'mvv.mission.title': 'Mission',
+    'mvv.mission.description':
+      "To provide excellent legal services, defending our clients' rights with integrity, professionalism and unwavering commitment to justice.",
+    'mvv.vision.title': 'Vision',
+    'mvv.vision.description':
+      "To be the leading law firm in Mexico, recognized for our legal excellence, innovation and commitment to society's development.",
+    'mvv.values.title': 'Values',
+    'mvv.values.integrity': 'Integrity',
+    'mvv.values.excellence': 'Excellence',
+    'mvv.values.commitment': 'Commitment',
+    'mvv.values.respect': 'Respect',
   },
   es: {
     // Nav
@@ -53,5 +66,18 @@ export const ui = {
     'footer.rights': 'Todos los derechos reservados',
     // Language Switcher
     'lang.select': 'Seleccionar idioma',
+    // Mission, Vision, Values
+    'mvv.title': 'Nuestra Filosofía',
+    'mvv.mission.title': 'Misión',
+    'mvv.mission.description':
+      'Brindar servicios legales de excelencia, defendiendo los derechos de nuestros clientes con integridad, profesionalismo y compromiso inquebrantable con la justicia.',
+    'mvv.vision.title': 'Visión',
+    'mvv.vision.description':
+      'Ser el despacho de abogados líder en México, reconocido por nuestra excelencia jurídica, innovación y compromiso con el desarrollo de la sociedad.',
+    'mvv.values.title': 'Valores',
+    'mvv.values.integrity': 'Integridad',
+    'mvv.values.excellence': 'Excelencia',
+    'mvv.values.commitment': 'Compromiso',
+    'mvv.values.respect': 'Respeto',
   },
 } as const;
