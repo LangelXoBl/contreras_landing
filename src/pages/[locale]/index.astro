@@ -5,6 +5,7 @@ import Footer from '@/sections/Footer.astro';
 import Header from '@/sections/Header.astro';
 import Hero from '@/sections/Hero.astro';
 import Layout from '@/layouts/Layout.astro';
+import Services from '@/sections/Services.astro';
 import { ui } from '@/i18n/ui';
 
 const lang = getLangFromUrl(Astro.url);
@@ -19,6 +20,7 @@ export function getStaticPaths() {
   <Header />
   <main>
     <Hero />
+    <Services />
     <Contact />
   </main>
   <Footer />
