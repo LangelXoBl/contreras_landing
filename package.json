@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint --ext .astro .",
-    "lint:fix": "eslint --ext .astro . --fix"
+    "lint:fix": "eslint --ext .astro --fix ."
   },
   "dependencies": {
     "@lucide/astro": "^0.539.0",

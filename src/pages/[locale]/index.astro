@@ -1,11 +1,11 @@
 ---
-import ContactForm from '@/components/ContactForm.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import Contact from '@/sections/Contact.astro';
 import Footer from '@/sections/Footer.astro';
 import Header from '@/sections/Header.astro';
 import Hero from '@/sections/Hero.astro';
-import { ui } from '@/i18n/ui';
-import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Layout from '@/layouts/Layout.astro';
+import { ui } from '@/i18n/ui';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,9 +19,7 @@ export function getStaticPaths() {
   <Header />
   <main>
     <Hero />
-    <div id="contact">
-      <ContactForm />
-    </div>
+    <Contact />
   </main>
   <Footer />
 </Layout>
