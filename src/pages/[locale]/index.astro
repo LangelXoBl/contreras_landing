@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import About from '@/sections/About.astro';
 import Contact from '@/sections/Contact.astro';
 import Footer from '@/sections/Footer.astro';
 import Header from '@/sections/Header.astro';
@@ -21,6 +22,7 @@ export function getStaticPaths() {
   <main>
     <Hero />
     <Services />
+    <About />
     <Contact />
   </main>
   <Footer />
