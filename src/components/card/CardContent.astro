@@ -1,3 +1,7 @@
-<div class="p-8 text-center">
+---
+const { class: className } = Astro.props;
+---
+
+<div class={`p-8 text-center ${className}`}>
   <slot />
 </div>

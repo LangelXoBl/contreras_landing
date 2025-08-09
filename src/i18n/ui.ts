@@ -22,7 +22,9 @@ export const ui = {
     // Contact
     'contact.title': 'Contact Us',
     'contact.name': 'Name',
+    'contact.phone': 'Phone',
     'contact.email': 'Email',
+    'contact.subject': 'Subject',
     'contact.message': 'Message',
     'contact.submit': 'Send Message',
     // Footer
@@ -59,7 +61,9 @@ export const ui = {
     // Contact
     'contact.title': 'Contáctanos',
     'contact.name': 'Nombre',
+    'contact.phone': 'Teléfono',
     'contact.email': 'Correo electrónico',
+    'contact.subject': 'Asunto',
     'contact.message': 'Mensaje',
     'contact.submit': 'Enviar Mensaje',
     // Footer
