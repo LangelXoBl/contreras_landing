@@ -14,8 +14,10 @@ export const ui = {
     'nav.services': 'Services',
     'nav.consultation': 'Consultation',
     // Hero
-    'hero.title': 'Welcome to our Landing Page',
-    'hero.subtitle': 'Transform your business with our innovative solutions',
+    'hero.title': 'Trusted Legal',
+    'hero.subtitle': 'Experience',
+    'hero.description':
+      'Over 20 years defending your rights with professionalism, integrity and proven results in all areas of law.',
     'hero.cta': 'Get Started',
     // Contact
     'contact.title': 'Contact Us',
@@ -36,8 +38,10 @@ export const ui = {
     'nav.services': 'Servicios',
     'nav.consultation': 'Consulta',
     // Hero
-    'hero.title': 'Bienvenido a nuestra Página de Inicio',
-    'hero.subtitle': 'Transforma tu negocio con nuestras soluciones innovadoras',
+    'hero.title': 'Experiencia Legal',
+    'hero.subtitle': 'de Confianza',
+    'hero.description':
+      'Más de 20 años defendiendo sus derechos con profesionalismo, integridad y resultados comprobados en todas las áreas del derecho.',
     'hero.cta': 'Comenzar',
     // Contact
     'contact.title': 'Contáctanos',
