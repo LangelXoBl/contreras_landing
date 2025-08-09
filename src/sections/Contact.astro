@@ -1,0 +1,18 @@
+---
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import ContactForm from '@/components/ContactForm.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
+        {t('contact.title')}
+      </h2>
+      <ContactForm />
+    </div>
+  </div>
+</section>

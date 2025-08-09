@@ -1,0 +1,27 @@
+---
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="bg-gradient-to-br from-primary-50 to-primary-100 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center">
+      <h1 class="text-4xl lg:text-6xl font-bold text-primary-800 leading-tight">
+        {t('hero.title')}
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 text-primary-600 max-w-3xl mx-auto">
+        {t('hero.subtitle')}
+      </p>
+      <div class="space-x-4">
+        <a
+          href="#contact"
+          class="bg-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-200 inline-block"
+        >
+          {t('hero.cta')}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
