@@ -1,4 +1,5 @@
 ---
+import { Facebook, Instagram, Twitter } from '@lucide/astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import LanguageSwitcher from '@/components/LanguageSwitcher.astro';
 import Logo from '@/assets/logoContrerasMini.svg';
@@ -7,38 +8,76 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<header class="bg-white shadow-sm">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <div class="flex items-center">
-        <a href="/" class="text-xl font-bold text-gray-900">
-          <Logo class="size-14" />
-        </a>
+<header class="border-b border-primary-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+  <div class="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <Logo class="size-14" />
+      <div>
+        <h1 class="text-xl font-bold text-primary-800">Contreras & Asociados</h1>
+        <p class="text-xs text-primary-500">Despacho Jurídico</p>
       </div>
-
-      <div class="hidden md:block">
-        <div class="ml-10 flex items-baseline space-x-8">
+    </div>
+    <nav class="hidden md:flex items-center space-x-8">
+      <a
+        href="#home"
+        class="text-sm font-medium text-primary-700 hover:text-primary-800 transition-colors"
+      >
+        {t('nav.home')}
+      </a>
+      <a
+        href="#services"
+        class="text-sm font-medium text-primary-700 hover:text-primary-800 transition-colors"
+      >
+        {t('nav.services')}
+      </a>
+      <a
+        href="#about"
+        class="text-sm font-medium text-primary-700 hover:text-primary-800 transition-colors"
+      >
+        {t('nav.about')}
+      </a>
+      <a
+        href="#contact"
+        class="text-sm font-medium text-primary-700 hover:text-primary-800 transition-colors"
+      >
+        {t('nav.contact')}
+      </a>
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2">
           <a
-            href="/"
-            class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            href="https://facebook.com"
+            target="_blank"
+            class="text-slate-600 hover:text-blue-600 transition-colors"
           >
-            {t('nav.home')}
+            <Facebook class="h-4 w-4" />
           </a>
           <a
-            href="#about"
-            class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            href="https://twitter.com"
+            target="_blank"
+            class="text-slate-600 hover:text-blue-400 transition-colors"
           >
-            {t('nav.about')}
+            <Twitter class="h-4 w-4" />
           </a>
           <a
-            href="#contact"
-            class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            href="https://instagram.com"
+            target="_blank"
+            class="text-slate-600 hover:text-pink-600 transition-colors"
           >
-            {t('nav.contact')}
+            <Instagram class="h-4 w-4" />
+          </a>
+          <a
+            href="https://aedin.com"
+            target="_blank"
+            class="text-slate-600 hover:text-blue-700 transition-colors"
+          >
+            <aedin class="h-4 w-4"></aedin>
           </a>
         </div>
+        <LanguageSwitcher />
+        <button class="bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md"
+          >{t('nav.consultation')}</button
+        >
       </div>
-      <LanguageSwitcher />
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
