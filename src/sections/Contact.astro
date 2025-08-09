@@ -1,17 +1,63 @@
 ---
+import { Clock, Mail, MapPin, Phone } from '@lucide/astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import Card from '@/components/card/Card.astro';
 import ContactForm from '@/components/ContactForm.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section class="py-16 bg-gray-50">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl mx-auto">
-      <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">
-        {t('contact.title')}
-      </h2>
+<section id="contact" class="py-20 bg-white">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">{t('contact.title')}</h2>
+      <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+        Estamos aquí para ayudarte. Agenda tu consulta gratuita y descubre cómo podemos resolver tu
+        situación legal.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div class="space-y-8">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <Card class="p-6 border-primary-200">
+            <div class="flex items-center space-x-3 mb-3">
+              <Phone class="h-6 w-6 text-primary-600" />
+              <h4 class="font-semibold text-primary-800">Teléfono</h4>
+            </div>
+            <p class="text-primary-600">+52 (55) 1234-5678</p>
+            <p class="text-primary-600">+52 (55) 8765-4321</p>
+          </Card>
+
+          <Card class="p-6 border-gray-200">
+            <div class="flex items-center space-x-3 mb-3">
+              <Mail class="h-6 w-6 text-slate-700" />
+              <h4 class="font-semibold text-slate-900">Email</h4>
+            </div>
+            <p class="text-slate-600">info@contrerasasociados.com</p>
+            <p class="text-slate-600">consultas@contrerasasociados.com</p>
+          </Card>
+
+          <Card class="p-6 border-gray-200">
+            <div class="flex items-center space-x-3 mb-3">
+              <MapPin class="h-6 w-6 text-slate-700" />
+              <h4 class="font-semibold text-slate-900">Dirección</h4>
+            </div>
+            <p class="text-slate-600">Av. Reforma 123, Piso 15</p>
+            <p class="text-slate-600">Col. Juárez, CDMX 06600</p>
+          </Card>
+
+          <Card class="p-6 border-gray-200">
+            <div class="flex items-center space-x-3 mb-3">
+              <Clock class="h-6 w-6 text-slate-700" />
+              <h4 class="font-semibold text-slate-900">Horarios</h4>
+            </div>
+            <p class="text-slate-600">Lun - Vie: 9:00 - 18:00</p>
+            <p class="text-slate-600">Sáb: 9:00 - 14:00</p>
+          </Card>
+        </div>
+      </div>
       <ContactForm />
     </div>
   </div>
