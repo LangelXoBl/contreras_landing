@@ -11,6 +11,9 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
+  redirects: {
+    '/': '/es/',
+  },
   vite: {
     plugins: [tailwindcss()],
   },
