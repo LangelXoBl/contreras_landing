@@ -19,7 +19,13 @@ export function getStaticPaths() {
 }
 ---
 
-<Layout title={t('hero.title')}>
+<Layout 
+  title={`${t('hero.title')} ${t('hero.subtitle')} - ${t('nav.consultation')}`}
+  description={t('hero.description')}
+  image="/images/mainImage.webp"
+  type="website"
+  siteName="Lic. Contreras - Despacho de Abogados"
+>
   <Header />
   <main>
     <Hero />
