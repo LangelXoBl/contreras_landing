@@ -1,28 +1,25 @@
 ---
-import { Building2, Scale, Shield, Users } from '@lucide/astro';
+import { Building2, Globe, House, Scale, Shield, Users } from '@lucide/astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Card from '@/components/card/Card.astro';
 import CardContent from '@/components/card/CardContent.astro';
-// import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 
-// const lang = getLangFromUrl(Astro.url);
-// const t = useTranslations(lang);
-
-// TODO: add translations
-// Fix: styles by hover and transitions
-// chore: verify card and card content styles
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+console.log(t('services.criminal.points'));
 ---
 
 <section id="services" class="py-20 bg-white">
   <div class="container mx-auto px-4 lg:px-6">
     <div class="text-center mb-16">
-      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Nuestras Especialidades</h2>
+      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">{t('services.title')}</h2>
       <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-        Ofrecemos servicios legales integrales con la experiencia y dedicación que su caso merece en
-        las principales áreas del derecho.
+        {t('services.description')}
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Derecho Penal -->
       <Card
         class="group hover:shadow-xl transition-all duration-300 border-primary-200 hover:border-primary-300"
       >
@@ -34,17 +31,19 @@ import CardContent from '@/components/card/CardContent.astro';
               <Shield class="h-8 w-8 text-primary-600" />
             </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Penal</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">{t('services.criminal.title')}</h3>
           <p class="text-slate-600 mb-4">
-            Defensa especializada en casos penales, desde delitos menores hasta procesos complejos.
+            {t('services.criminal.description')}
           </p>
           <ul class="text-sm text-slate-500 space-y-1">
-            <li>• Defensa penal</li>
-            <li>• Amparo penal</li>
+            <li>• {t('services.criminal.points')[0]}</li>
+            <li>• {t('services.criminal.points')[1]}</li>
+            <li>• {t('services.criminal.points')[2]}</li>
           </ul>
         </CardContent>
       </Card>
 
+      <!-- Derecho Civil -->
       <Card
         class="group hover:shadow-xl transition-all duration-300 border-primary-200 hover:border-primary-300"
       >
@@ -56,19 +55,19 @@ import CardContent from '@/components/card/CardContent.astro';
               <Scale class="h-8 w-8 text-blue-600" />
             </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Civil</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">{t('services.civil.title')}</h3>
           <p class="text-slate-600 mb-4">
-            Asesoría integral en asuntos civiles, contratos y resolución de conflictos
-            patrimoniales.
+            {t('services.civil.description')}
           </p>
           <ul class="text-sm text-slate-500 space-y-1">
-            <li>• Contratos civiles</li>
-            <li>• Daños y perjuicios</li>
-            <li>• Propiedad inmobiliaria</li>
+            <li>• {t('services.civil.points')[0]}</li>
+            <li>• {t('services.civil.points')[1]}</li>
+            <li>• {t('services.civil.points')[2]}</li>
           </ul>
         </CardContent>
       </Card>
 
+      <!-- Derecho Familiar -->
       <Card
         class="group hover:shadow-xl transition-all duration-300 border-primary-200 hover:border-primary-300"
       >
@@ -80,18 +79,19 @@ import CardContent from '@/components/card/CardContent.astro';
               <Users class="h-8 w-8 text-green-600" />
             </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Familiar</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">{t('services.family.title')}</h3>
           <p class="text-slate-600 mb-4">
-            Acompañamiento sensible y profesional en asuntos familiares y de pareja.
+            {t('services.family.description')}
           </p>
           <ul class="text-sm text-slate-500 space-y-1">
-            <li>• Divorcios</li>
-            <li>• Custodia de menores</li>
-            <li>• Pensión alimenticia</li>
+            <li>• {t('services.family.points')[0]}</li>
+            <li>• {t('services.family.points')[1]}</li>
+            <li>• {t('services.family.points')[2]}</li>
           </ul>
         </CardContent>
       </Card>
 
+      <!-- Derecho Corporativo -->
       <Card
         class="group hover:shadow-xl transition-all duration-300 border-primary-200 hover:border-primary-300"
       >
@@ -103,14 +103,62 @@ import CardContent from '@/components/card/CardContent.astro';
               <Building2 class="h-8 w-8 text-purple-600" />
             </div>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Corporativo</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">{t('services.corporate.title')}</h3>
           <p class="text-slate-600 mb-4">
-            Asesoría empresarial integral para el crecimiento y protección de su negocio.
+            {t('services.corporate.description')}
           </p>
           <ul class="text-sm text-slate-500 space-y-1">
-            <li>• Constitución de empresas</li>
-            <li>• Contratos comerciales</li>
-            <li>• Fusiones y adquisiciones</li>
+            <li>• {t('services.corporate.points')[0]}</li>
+            <li>• {t('services.corporate.points')[1]}</li>
+            <li>• {t('services.corporate.points')[2]}</li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <!-- Derecho Inmobiliario -->
+      <Card
+        class="group hover:shadow-xl transition-all duration-300 border-primary-200 hover:border-primary-300"
+      >
+        <CardContent class="p-8 text-center">
+          <div class="mb-6">
+            <div
+              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-orange-200 transition-colors"
+            >
+              <House class="h-8 w-8 text-orange-600" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">{t('services.realestate.title')}</h3>
+          <p class="text-slate-600 mb-4">
+            {t('services.realestate.description')}
+          </p>
+          <ul class="text-sm text-slate-500 space-y-1">
+            <li>• {t('services.realestate.points')[0]}</li>
+            <li>• {t('services.realestate.points')[1]}</li>
+            <li>• {t('services.realestate.points')[2]}</li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <!-- Derecho Migratorio -->
+      <Card
+        class="group hover:shadow-xl transition-all duration-300 border-primary-200 hover:border-primary-300"
+      >
+        <CardContent class="p-8 text-center">
+          <div class="mb-6">
+            <div
+              class="w-16 h-16 bg-zinc-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-zinc-200 transition-colors"
+            >
+              <Globe class="h-8 w-8 text-zinc-600" />
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">{t('services.immigration.title')}</h3>
+          <p class="text-slate-600 mb-4">
+            {t('services.immigration.description')}
+          </p>
+          <ul class="text-sm text-slate-500 space-y-1">
+            <li>• {t('services.immigration.points')[0]}</li>
+            <li>• {t('services.immigration.points')[1]}</li>
+            <li>• {t('services.immigration.points')[2]}</li>
           </ul>
         </CardContent>
       </Card>

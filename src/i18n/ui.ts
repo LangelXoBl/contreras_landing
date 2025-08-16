@@ -22,19 +22,56 @@ export const ui = {
     // Services
     'services.title': 'Our Specialties',
     'services.description':
-      'We offer comprehensive legal services with the experience and dedication your case deserves in the main areas of law.',
+      'We are a law firm in Cancún with experience in various areas of law. We provide legal advice and representation with a personalized and strategic approach, always focused on protecting your rights and interests.',
+
     'services.criminal.title': 'Criminal Law',
     'services.criminal.description':
-      'Specialized defense in criminal cases, from minor offenses to complex proceedings.',
+      'Specialized criminal defense in Cancún and Quintana Roo, from minor offenses to complex cases. We safeguard your rights throughout the entire legal process.',
+    'services.criminal.points': [
+      'Criminal defense',
+      'Criminal amparo (constitutional relief)',
+      'Preventive legal advice',
+    ],
     'services.civil.title': 'Civil Law',
     'services.civil.description':
-      'Comprehensive advice on civil matters, contracts and resolution of property conflicts.',
+      'Comprehensive advice on contracts, property, and civil disputes. We help you prevent legal risks and resolve patrimonial conflicts effectively.',
+    'services.civil.points': [
+      'Civil and commercial contracts',
+      'Claims for damages',
+      'Property and real estate',
+    ],
     'services.family.title': 'Family Law',
     'services.family.description':
-      'Sensitive and professional support in family and couple matters.',
+      'Sensitive and professional support in family matters. We seek legal solutions that provide stability and security for your loved ones.',
+    'services.family.points': [
+      'Divorces and separation',
+      'Custody and parental rights',
+      'Child support',
+    ],
     'services.corporate.title': 'Corporate Law',
     'services.corporate.description':
-      'Comprehensive business advice for the growth and protection of your business.',
+      'Business legal consulting in Cancún to strengthen your company’s legal structure, reduce risks, and promote sustainable growth.',
+    'services.corporate.points': [
+      'Company incorporation',
+      'Commercial contracts',
+      'Mergers and acquisitions',
+    ],
+    'services.realestate.title': 'Real Estate Law',
+    'services.realestate.description':
+      'Legal advice for real estate transactions in Cancún and the Riviera Maya, including purchase, sale, and leasing. Protect your investment with expert legal support.',
+    'services.realestate.points': [
+      'Purchase and sale contracts',
+      'Leasing agreements',
+      'Property regularization',
+    ],
+    'services.immigration.title': 'Immigration Law',
+    'services.immigration.description':
+      'Guidance on immigration procedures for foreigners in Mexico, including residency, naturalization, and work permits.',
+    'services.immigration.points': [
+      'Temporary and permanent residency',
+      'Immigration regularization',
+      'Work permits and visas',
+    ],
     // Contact
     'contact.title': 'Contact Us',
     'contact.name': 'Name',
@@ -97,19 +134,51 @@ export const ui = {
     // Services
     'services.title': 'Nuestras Especialidades',
     'services.description':
-      'Ofrecemos servicios legales integrales con la experiencia y dedicación que su caso merece en las principales áreas del derecho.',
+      'Somos un despacho de abogados en Cancún con experiencia en diversas ramas del derecho. Brindamos asesoría y representación legal con un enfoque personalizado y estratégico, siempre orientado a proteger sus derechos e intereses.',
     'services.criminal.title': 'Derecho Penal',
     'services.criminal.description':
-      'Defensa especializada en casos penales, desde delitos menores hasta procesos complejos.',
+      'Defensa penal especializada en Cancún y Quintana Roo, desde delitos menores hasta procesos complejos. Protegemos sus derechos durante las etapas del procedimiento judicial.',
+    'services.criminal.points': ['Defensa penal', 'Amparo penal', 'Asesoría preventiva'],
     'services.civil.title': 'Derecho Civil',
     'services.civil.description':
-      'Asesoría integral en asuntos civiles, contratos y resolución de conflictos patrimoniales.',
+      'Asesoría integral en contratos, propiedad y conflictos civiles. Le ayudamos a prevenir riesgos legales y resolver disputas patrimoniales de forma eficaz.',
+    'services.civil.points': [
+      'Contratos civiles y mercantiles',
+      'Reclamaciones por daños y perjuicios',
+      'Propiedad e inmuebles',
+    ],
     'services.family.title': 'Derecho Familiar',
     'services.family.description':
-      'Acompañamiento sensible y profesional en asuntos familiares y de pareja.',
+      'Atención sensible y profesional en casos familiares. Buscamos soluciones legales que aporten estabilidad y seguridad a su familia.',
+    'services.family.points': [
+      'Divorcios y separación',
+      'Custodia y patria potestad',
+      'Pensión alimenticia',
+    ],
     'services.corporate.title': 'Derecho Corporativo',
     'services.corporate.description':
-      'Asesoría empresarial integral para el crecimiento y protección de su negocio.',
+      'Asesoría empresarial en Cancún para fortalecer la estructura legal de su negocio, minimizar riesgos y potenciar su crecimiento.',
+    'services.corporate.points': [
+      'Constitución de sociedades',
+      'Contratos comerciales',
+      'Fusiones y adquisiciones',
+    ],
+    'services.realestate.title': 'Derecho Inmobiliario',
+    'services.realestate.description':
+      'Asesoramiento legal en operaciones de compra, venta y arrendamiento de bienes raíces en Cancún y la Riviera Maya. Proteja su inversión con respaldo jurídico.',
+    'services.realestate.points': [
+      'Contratos de compraventa',
+      'Arrendamientos',
+      'Regularización de propiedades',
+    ],
+    'services.immigration.title': 'Derecho Migratorio',
+    'services.immigration.description':
+      'Asesoría en trámites migratorios para extranjeros en México, incluyendo residencia, naturalización y permisos de trabajo.',
+    'services.immigration.points': [
+      'Residencia temporal y permanente',
+      'Regularización migratoria',
+      'Permisos de trabajo y visas',
+    ],
     // Contact
     'contact.title': 'Contáctanos',
     'contact.name': 'Nombre',
