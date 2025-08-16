@@ -11,9 +11,11 @@ const t = useTranslations(lang);
   <form class="space-y-4">
     <div class="grid sm:grid-cols-2 gap-4">
       <div>
-        <label class="block text-sm font-medium text-slate-700 mb-2">{t('contact.name')}</label>
+        <label class="block text-sm font-medium text-slate-700 mb-2"
+          >{t('contact.name.label')}</label
+        >
         <input
-          placeholder="Tu nombre completo"
+          placeholder={t('contact.name.placeholder')}
           class="w-full rounded-md border px-3 py-2 text-sm border-gray-300"
         />
       </div>

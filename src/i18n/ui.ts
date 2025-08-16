@@ -23,7 +23,6 @@ export const ui = {
     'services.title': 'Our Specialties',
     'services.description':
       'We are a law firm in Cancún with experience in various areas of law. We provide legal advice and representation with a personalized and strategic approach, always focused on protecting your rights and interests.',
-
     'services.criminal.title': 'Criminal Law',
     'services.criminal.description':
       'Specialized criminal defense in Cancún and Quintana Roo, from minor offenses to complex cases. We safeguard your rights throughout the entire legal process.',
@@ -74,11 +73,16 @@ export const ui = {
     ],
     // Contact
     'contact.title': 'Contact Us',
-    'contact.name': 'Name',
-    'contact.phone': 'Phone',
-    'contact.email': 'Email',
-    'contact.subject': 'Subject',
-    'contact.message': 'Message',
+    'contact.name.label': 'Name',
+    'contact.name.placeholder': 'Your name',
+    'contact.phone.label': 'Phone',
+    'contact.phone.placeholder': 'Your phone number',
+    'contact.email.label': 'Email',
+    'contact.email.placeholder': 'email@example.com',
+    'contact.subject.label': 'Subject',
+    'contact.subject.placeholder': 'Select a subject',
+    'contact.message.label': 'Message',
+    'contact.message.placeholder': 'Briefly describe your legal situation',
     'contact.submit': 'Send Message',
     // Footer
     'footer.description':
@@ -181,11 +185,16 @@ export const ui = {
     ],
     // Contact
     'contact.title': 'Contáctanos',
-    'contact.name': 'Nombre',
-    'contact.phone': 'Teléfono',
-    'contact.email': 'Correo electrónico',
-    'contact.subject': 'Asunto',
-    'contact.message': 'Mensaje',
+    'contact.name.label': 'Nombre',
+    'contact.name.placeholder': 'Tu nombre completo',
+    'contact.phone.label': 'Teléfono',
+    'contact.phone.placeholder': 'Tu número de teléfono',
+    'contact.email.label': 'Correo electrónico',
+    'contact.email.placeholder': 'tu@email.com',
+    'contact.subject.label': 'Asunto',
+    'contact.subject.placeholder': 'Selecciona un área',
+    'contact.message.label': 'Mensaje',
+    'contact.message.placeholder': 'Describe brevemente tu situación legal...',
     'contact.submit': 'Enviar Mensaje',
     // Footer
     'footer.description':
