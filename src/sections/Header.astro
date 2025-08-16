@@ -1,8 +1,9 @@
 ---
-import { Facebook, Instagram, Twitter } from '@lucide/astro';
+import { Facebook, Instagram, Linkedin, Twitter } from '@lucide/astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import LanguageSwitcher from '@/components/LanguageSwitcher.astro';
 import Logo from '@/assets/logoContrerasMini.svg';
+import constants from '@/utils/constants';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,8 +14,8 @@ const t = useTranslations(lang);
     <div class="flex items-center space-x-2">
       <Logo class="size-14 fill-primary-500" />
       <div>
-        <h1 class="text-xl font-bold text-primary-800">Contreras & Asociados</h1>
-        <p class="text-xs text-primary-500">Despacho Jurídico</p>
+        <h1 class="text-xl font-bold text-primary-800">{constants.businessName}</h1>
+        <p class="text-xs text-primary-500">{constants.bussinessSubtitle}</p>
       </div>
     </div>
     <nav class="hidden md:flex items-center space-x-8">
@@ -45,32 +46,32 @@ const t = useTranslations(lang);
       <div class="flex items-center space-x-4">
         <div class="flex items-center space-x-2">
           <a
-            href="https://facebook.com"
+            href={constants.facebook}
             target="_blank"
             class="text-slate-600 hover:text-blue-600 transition-colors"
           >
             <Facebook class="h-4 w-4" />
           </a>
           <a
-            href="https://twitter.com"
+            href={constants.x}
             target="_blank"
             class="text-slate-600 hover:text-blue-400 transition-colors"
           >
             <Twitter class="h-4 w-4" />
           </a>
           <a
-            href="https://instagram.com"
+            href={constants.instagram}
             target="_blank"
             class="text-slate-600 hover:text-pink-600 transition-colors"
           >
             <Instagram class="h-4 w-4" />
           </a>
           <a
-            href="https://aedin.com"
+            href={constants.linkedin}
             target="_blank"
             class="text-slate-600 hover:text-blue-700 transition-colors"
           >
-            <aedin class="h-4 w-4"></aedin>
+            <Linkedin class="h-4 w-4" />
           </a>
         </div>
         <LanguageSwitcher />

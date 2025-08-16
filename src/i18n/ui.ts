@@ -15,9 +15,9 @@ export const ui = {
     'nav.consultation': 'Consultation',
     // Hero
     'hero.title': 'Trusted Legal',
-    'hero.subtitle': 'Experience',
+    'hero.subtitle': 'Experience in Cancún',
     'hero.description':
-      'Over 20 years defending your rights with professionalism, integrity and proven results in all areas of law.',
+      'Over 25 years defending your rights with professionalism, integrity and proven results in all areas of law.',
     'hero.cta': 'Get Started',
     // Services
     'services.title': 'Our Specialties',
@@ -45,7 +45,7 @@ export const ui = {
     'contact.submit': 'Send Message',
     // Footer
     'footer.description':
-      'Defending your rights with professionalism, integrity and experience since 2003.',
+      'Defending your rights with professionalism, integrity and experience since 2001.',
     'footer.services': 'Services',
     'footer.company': 'Company',
     'footer.rights': 'All rights reserved.',
@@ -90,9 +90,9 @@ export const ui = {
     'nav.consultation': 'Consulta',
     // Hero
     'hero.title': 'Experiencia Legal',
-    'hero.subtitle': 'de Confianza',
+    'hero.subtitle': 'de Confianza en Cancún',
     'hero.description':
-      'Más de 20 años defendiendo sus derechos con profesionalismo, integridad y resultados comprobados en todas las áreas del derecho.',
+      'Más de 25 años defendiendo sus derechos con profesionalismo, integridad y resultados comprobados en todas las áreas del derecho.',
     'hero.cta': 'Comenzar',
     // Services
     'services.title': 'Nuestras Especialidades',
@@ -120,7 +120,7 @@ export const ui = {
     'contact.submit': 'Enviar Mensaje',
     // Footer
     'footer.description':
-      'Defendiendo sus derechos con profesionalismo, integridad y experiencia desde 2003.',
+      'Defendiendo sus derechos con profesionalismo, integridad y experiencia desde 2001.',
     'footer.services': 'Servicios',
     'footer.company': 'Empresa',
     'footer.rights': 'Todos los derechos reservados.',
