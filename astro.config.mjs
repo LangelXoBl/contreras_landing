@@ -1,10 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://laxb.dev', // Cambia por tu dominio real
+  site: 'http://lawyercontreras.com/',
   i18n: {
     defaultLocale: 'es',
     locales: ['en', 'es'],
@@ -18,4 +19,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  integrations: [sitemap()],
 });
