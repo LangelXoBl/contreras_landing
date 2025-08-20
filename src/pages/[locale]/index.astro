@@ -9,6 +9,7 @@ import Layout from '@/layouts/Layout.astro';
 import Philosophy from '@/sections/Philosophy.astro';
 import Services from '@/sections/Services.astro';
 import WhatsappFlottingButton from '@/components/WhatsappFlottingButton.astro';
+import constants from '@/utils/constants';
 import { ui } from '@/i18n/ui';
 
 const lang = getLangFromUrl(Astro.url);
@@ -19,8 +20,8 @@ export function getStaticPaths() {
 }
 ---
 
-<Layout 
-  title={`${t('hero.title')} ${t('hero.subtitle')} - ${t('nav.consultation')}`}
+<Layout
+  title={`${t('hero.title')} ${t('hero.subtitle')} - ${constants.businessName}`}
   description={t('hero.description')}
   image="/images/mainImage.webp"
   type="website"
