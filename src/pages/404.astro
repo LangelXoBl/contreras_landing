@@ -7,6 +7,8 @@ import Layout from '@/layouts/Layout.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+export const prerender = true;
 ---
 
 <Layout title={t('404.title')}>

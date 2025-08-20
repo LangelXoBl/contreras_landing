@@ -4,7 +4,6 @@ import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import LanguageSwitcher from '@/components/LanguageSwitcher.astro';
 import Logo from '@/assets/logoContrerasMini.svg';
 import constants from '@/utils/constants';
-
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -75,10 +74,22 @@ const t = useTranslations(lang);
           </a>
         </div>
         <LanguageSwitcher />
-        <button class="bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md"
+        <button
+          id="greet-button"
+          class="bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md"
           >{t('nav.consultation')}</button
         >
       </div>
     </nav>
   </div>
 </header>
+
+<script>
+  import { actions } from 'astro:actions';
+
+  const greetButton = document.getElementById('greet-button');
+  greetButton?.addEventListener('click', async () => {
+    const { data, error } = await actions.getGreeting({ name: 'Houston' });
+    if (!error) alert(data);
+  });
+</script>

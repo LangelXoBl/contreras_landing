@@ -14,12 +14,14 @@ import { ui } from '@/i18n/ui';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+export const prerender = true;
+
 export function getStaticPaths() {
   return Object.keys(ui).map((lang) => ({ params: { locale: lang } }));
 }
 ---
 
-<Layout 
+<Layout
   title={`${t('hero.title')} ${t('hero.subtitle')} - ${t('nav.consultation')}`}
   description={t('hero.description')}
   image="/images/mainImage.webp"
