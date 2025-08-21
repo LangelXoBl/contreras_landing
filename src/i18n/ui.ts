@@ -18,7 +18,8 @@ export const ui = {
     'hero.subtitle': 'Experience in Cancún',
     'hero.description':
       'Over 25 years defending your rights with professionalism, integrity and proven results in all areas of law.',
-    'hero.cta': 'Get Started',
+    'hero.cta': 'Send Message',
+    'hero.cta2': 'Location',
     // Services
     'services.title': 'Our Specialties',
     'services.description':
@@ -145,7 +146,8 @@ export const ui = {
     'hero.subtitle': 'de Confianza en Cancún',
     'hero.description':
       'Más de 25 años defendiendo sus derechos con profesionalismo, integridad y resultados comprobados en todas las áreas del derecho.',
-    'hero.cta': 'Comenzar',
+    'hero.cta': 'Enviar Mensaje',
+    'hero.cta2': 'Ubicación',
     // Services
     'services.title': 'Nuestras Especialidades',
     'services.description':
