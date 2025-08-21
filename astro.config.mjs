@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://lawyercontreras.com/',
+  site: 'https://lawyercontreras.com/',
   i18n: {
     defaultLocale: 'es',
     locales: ['en', 'es'],
@@ -19,5 +19,19 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      i18n: {
+        defaultLocale: 'es',
+        locales: {
+          es: 'es-MX',
+          en: 'en-US',
+        },
+      },
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+      entryLimit: 10000,
+    }),
+  ],
 });

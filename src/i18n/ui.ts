@@ -14,8 +14,8 @@ export const ui = {
     'nav.services': 'Services',
     'nav.consultation': 'Consultation',
     // Hero
-    'hero.title': 'Trusted Legal',
-    'hero.subtitle': 'Experience in Cancún',
+    'hero.title': 'Law Firm in Cancún',
+    'hero.subtitle': 'Legal Advice',
     'hero.description':
       'Over 25 years defending your rights with professionalism, integrity and proven results in all areas of law.',
     'hero.cta': 'Send Message',
@@ -142,8 +142,8 @@ export const ui = {
     'nav.services': 'Servicios',
     'nav.consultation': 'Consulta',
     // Hero
-    'hero.title': 'Experiencia Legal',
-    'hero.subtitle': 'de Confianza en Cancún',
+    'hero.title': 'Despacho de Abogados en Cancún',
+    'hero.subtitle': 'Asesoría Jurídica',
     'hero.description':
       'Más de 25 años defendiendo sus derechos con profesionalismo, integridad y resultados comprobados en todas las áreas del derecho.',
     'hero.cta': 'Enviar Mensaje',

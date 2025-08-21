@@ -9,7 +9,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout title={t('404.title')}>
+<Layout title={t('404.title')} description="404 - Page Not Found">
   <div class="min-h-screen bg-gradient-to-br from-primary-50 to-primary-100 flex flex-col">
     {/* Header simplificado */}
     <header class="border-b border-primary-200 bg-white/95 backdrop-blur-sm">
