@@ -2,15 +2,12 @@
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
 import Whatsapp from '@/assets/whatsapp.svg';
 import constants from '@/utils/constants';
+import { getWhatsappUrl } from '@/utils/whatsappApi';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Remove all non-numeric characters from phone number - +52 998 761 8595 => 529987618595
-const phoneNumber = constants.phoneNumber.replace(/[^\d]/g, '');
-
-const message = encodeURIComponent(t('whatsapp.message'));
-const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+const whatsappUrl = getWhatsappUrl(constants.phoneNumber, t('whatsapp.message'));
 ---
 
 <a
