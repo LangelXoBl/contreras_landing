@@ -1,6 +1,6 @@
 ---
-import { Briefcase, CheckCircle } from '@lucide/astro';
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import { CheckCircle } from '@lucide/astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -57,15 +57,6 @@ const t = useTranslations(lang);
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="pt-6">
-          <button
-            class="flex justify-center items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-md"
-          >
-            <Briefcase class="mr-2 h-5 w-5" />
-            {t('about.cta')}
-          </button>
         </div>
       </div>
     </div>

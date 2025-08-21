@@ -60,7 +60,7 @@ export const ui = {
     'services.immigration.points2': 'Immigration regularization',
     'services.immigration.points3': 'Work permits and visas',
     // about
-    'about.title': 'Contreras & Associates',
+    'about.title': 'About Us',
     'about.description':
       'A law firm with tradition, experience, and unwavering commitment to justice and our clients.',
     'about.experience.title': 'Proven Experience',
@@ -70,7 +70,6 @@ export const ui = {
       'Each client receives direct attention and strategies tailored to their case.',
     'about.results.title': 'Effective Results',
     'about.results.text': 'Proven track record of successful cases and satisfied clients.',
-    'about.cta': 'Meet Our Team',
     // Contact
     'contact.title': 'Contact Us',
     'contact.subtitle':
@@ -188,7 +187,7 @@ export const ui = {
     'services.immigration.points2': 'Regularización migratoria',
     'services.immigration.points3': 'Permisos de trabajo y visas',
     // about
-    'about.title': 'Contreras y Asociados',
+    'about.title': 'Nosotros',
     'about.description':
       'Un despacho con tradición, experiencia y compromiso inquebrantable con la justicia y nuestros clientes.',
     'about.experience.title': 'Experiencia Comprobada',
@@ -198,7 +197,6 @@ export const ui = {
       'Cada cliente recibe atención directa y estrategias adaptadas a su caso.',
     'about.results.title': 'Resultados Efectivos',
     'about.results.text': 'Historial comprobado de casos ganados y clientes satisfechos.',
-    'about.cta': 'Conocer Nuestro Equipo',
     // Contact
     'contact.title': 'Contáctanos',
     'contact.subtitle':
